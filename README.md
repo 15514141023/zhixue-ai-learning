@@ -1,16 +1,36 @@
-# React + Vite
+# 智学 AI 学习助手
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+一个基于 React 的前端学习辅助平台，主要面向自学场景，帮助用户进行 AI 问答、学习计划管理、知识总结和学习进度追踪。
 
-Currently, two official plugins are available:
+当前版本为前端 MVP，数据暂时使用 `localStorage` 进行本地持久化，后续可以扩展为后端接口和数据库版本。
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 项目简介
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+智学 AI 学习助手是一个用于辅助个人学习的 Web 应用。用户可以通过 AI 聊天页面获取学习建议，也可以管理自己的学习计划，查看学习进度，并在知识库页面查看根据学习情况生成的阶段性总结。
 
-## Expanding the ESLint configuration
+项目重点不是单纯做静态页面，而是模拟一个完整的学习产品流程：
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- AI 对话
+- 学习任务生成
+- 学习计划管理
+- 学习进度统计
+- 知识库总结
+- 本地数据持久化
+
+---
+
+## 核心功能
+
+### 1. AI 学习助手
+
+用户可以在聊天页面输入问题，系统会根据关键词生成模拟 AI 回复。
+
+目前支持的指令包括：
+
+```txt
+新增学习计划：学习 React Router
+删除 React Router
+把 React Hooks 标记为完成
+查看学习进度
